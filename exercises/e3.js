@@ -13,8 +13,40 @@
  * doesArrayIncludeItemsBetweenVals([2, 4, 2], 5, 10) => false
  */
 
-// Your code goes here...
+function doesArrayIncludeItemsBetweenVals(arr, val1, val2) {
+  for(let num of arr) {
+    if(num > val1 && num < val2) {
+      return true;
+    }
+  }
+  return false
+}
 
+
+
+// function betweenVals ( a, v1, v2) {
+  
+//   a.map( v => {
+//     if( v > v1 && v < v2) {
+//       console.log(true)
+//       return true
+//     }
+    
+    
+//     return false
+//   })
+  
+// }
+
+
+// function doesArrayIncludeItemsBetweenVals(arr, val1, val2) {
+//   for(let num of arr) {
+//     if(num < val1 && num > val2) {
+//       return true;
+//     }
+//   }
+//   return false
+// }
 
 
 /**
@@ -31,6 +63,30 @@
  * getValueWithConditionOne(20, 30) => 100;
  */
 
+function getValueWithConditionOne(num1, num2) {
+  if(num1 === num2) {
+    return num1 + num2
+  }
+  return (num1 +num2) * 2
+}
+
+const getValueWithConditionTwo = (num1, num2) => {
+
+  let response 
+
+  if(num1 === num2) {
+    return num1 + num2
+  }
+  return (num1 +num2) * 2
+
+}
+
+let getValueWithConditionThree = function(num1, num2) {
+  if(num1 === num2) {
+    return num1 + num2
+  }
+  return (num1 +num2) * 2
+}
 
 
 // === TEST YOURSELF ===
